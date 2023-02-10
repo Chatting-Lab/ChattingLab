@@ -10,7 +10,7 @@ const httpserver = http.Server(app);
 const io = socketio(httpserver)
 
 const gamedirectory = path.join(__dirname, "html");
-const vPass = test
+const vPass = "test"
 
 app.use(express.static(gamedirectory));
 
