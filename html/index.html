@@ -1,0 +1,67 @@
+ <!DOCTYPE HTML>
+<html>
+  <head>
+		
+    <!-- Primary Meta Tags -->
+		<title>Chatting Lab - The First School Social Media</title>
+		 <link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="title" content="Chatting Lab - The First School Social Media">
+		<meta name="description" content="Chat with school friends! This chat is FILTERED! It is also MONITORED!  You can have private chat rooms or type 'PUBLIC' For a public chat. To create a room, type anything. to join, enter a given room name. Please note that if you are using this at differ ant schools than some, joining PUBLIC with other students will result in the two schools interacting with each other. In the event of such, please do not share any personal info such as school, address, full name, or school email. You may share first names but that is all I as the developer would recommend. Any punishments by schools for sharing such info is not my responsibility, and will not be unless required by law and or Replit.com Staff.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://chat.chattinglab.repl.co/">
+		<meta property="og:title" content="Chatting Lab - The First School Social Media">
+		<meta property="og:description" content="Chat with school friends! This chat is FILTERED! It is also MONITORED!  You can have private chat rooms or type "PUBLIC" For a public chat. To create a room, type anything. to join, enter a given room name. Please note that if you are using this at differ ant schools than some, joining PUBLIC with other students will result in the two schools interacting with each other. In the event of such, please do not share any personal info such as school, address, full name, or school email. You may share first names but that is all I as the developer would recommend. Any punishments by schools for sharing such info is not my responsibility, and will not be unless required by law and or Replit.com Staff.">
+<meta property="og:image" content="https://chat.chattinglab.repl.co/metaThumb.png">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://chat.chattinglab.repl.co/">
+		<meta property="twitter:title" content="Chatting Lab - The First School Social Media">
+		<meta property="twitter:description" content="Chat with school friends! This chat is FILTERED! It is also MONITORED!  You can have private chat rooms or type "PUBLIC" For a public chat. To create a room, type anything. to join, enter a given room name. Please note that if you are using this at differ ant schools than some, joining PUBLIC with other students will result in the two schools interacting with each other. In the event of such, please do not share any personal info such as school, address, full name, or school email. You may share first names but that is all I as the developer would recommend. Any punishments by schools for sharing such info is not my responsibility, and will not be unless required by law and or Replit.com Staff.">
+		<meta property="twitter:image" content="https://chat.chattinglab.repl.co/metaThumb.png">
+    <meta name = "charset" charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <link rel = "stylesheet" type = "text/css" href = "https://replitcss.codingmaster398.repl.co/replit.min.css">
+    <script src = "script.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+		<script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+  </head>
+
+  <!--<div id="bounds">
+  <label>
+    <input class="on" type="radio" name="toggle" >         
+    <input class="off" type="radio" name="toggle" checked>
+    <span></span>
+  </label>
+</div>-->
+  <h1 id = "title">Chatting Lab</h1>
+	
+  <body align="center" onload = "onload()">
+    <div id = "main">
+      <audio id = "Ding" src = "ping.mp3"> </audio>
+      <div id = "AccessPort">
+        <input id = "NameInput" type = "text" placeholder = "Username">
+        <br><br>
+        <input align="left"  id = "IDInput" type = "text" placeholder = "Room Name">
+        <button align="left" class size="20" id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">Connect</button>
+      </div>
+      <h2 id = "RoomID"></h2>
+      <div id = "chat">
+      </div>
+      <div id="messageBox">
+        <div class="tooltip">
+        <button id="copyButton" type="button" onclick="copyRoomLink()" onmouseout="let tooltip = document.getElementById('copyToolTip'); tooltip.innerHTML = 'Click to Copy';">
+          <span class="tooltiptext" id="copyToolTip">Click to Copy</span>
+          Copy Room Link
+          </button>
+          </div>
+        <input id = "ComposedMessage" type = "text">
+        <input id = "SendMessage" onclick="Send()"    
+        value = "Send" class = "Button" type = "submit">
+      </div>
+      <br><br>
+    </div>
+  </body>
+</html>

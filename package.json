@@ -1,0 +1,24 @@
+{
+  "name": "Socketio-Chat-Template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@2toad/profanity": "^2.2.0",
+    "@socket.io/admin-ui": "^0.4.0",
+    "@types/socket.io": "^3.0.2",
+    "bad-words": "^3.0.4",
+    "express": "^4.18.2",
+    "html": "^1.0.0",
+    "profanity-cleaner": "0.0.3",
+    "server": "^1.0.38",
+    "socket.io": "^2.5.0",
+    "swears": "^0.1.6"
+  }
+}
