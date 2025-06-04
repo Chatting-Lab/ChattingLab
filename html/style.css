@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+  background: #f5f5f5;
+  color: #303030;
+  font-family: 'Segoe UI';
+}
 
-* {
-  background: #121212;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+label{
+  width: 5%;
+  display: inline-block;
+  text-align: right;
 }
 
 input{
@@ -12,149 +15,18 @@ input{
   color: #303030;
   font-size: 120%;
   border: none;
-  text-align: left;
 }
 
-#title{
+.Message{
+  color: #a0a0a0;
+}
+
+#Main{
+  background: #a0a0a0;
+  border-radius: 1%;
+  padding-left: 1%;
+}
+
+#Title{
   font-size: 300%;
-}
-
-#chat {
-  height: 65vh;
-  overflow-y: auto;
-}
-
-.message {
-  margin-top: 0.7vh;
-  margin-bottom: 0.7vh;
-  word-break: break-all;
-  color: #fff;
-}
-
-.impMessage {
-  margin-top: 0.7vh;
-  margin-bottom: 0.7vh;
-  word-break: break-all;
-  color: rgb(223, 37, 37);
-}
-
-#messageBox {
-  margin-top: 1vh;
-}
-
-h1 {
-  margin-bottom: 3vh;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #292828;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #292828 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-#copyButton {
-  background-color: #121212;
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid #292828;
-  border-radius: 8px;
-}
-
-#copyButton:hover {
-  opacity: 1;
-}
-
-#bounds {
-  padding:2px;
-  transition: all .2s ease;
-  border: 4px solid #ececec;
-  border-radius: 2em;
-  overflow:auto;
-  float:left;
-  color: transparent;
-}
-
-#bounds label {
-  float:left;
-  width: 4.0em;
-  height: 2.0em;
-}
-
-#bounds label span {
-  text-align:center;
-  display:block;
-  background : #7FC6A6;
-  width: 2.25em;
-  height:2em;
-  border-radius : 20px;
-  transition : 350ms all;
-}
-
-#bounds label input {
-  position:absolute;
-    width: 4.0em;
-    height: 2.0em;
-  opacity: 0;
-}
-
-#bounds label input.off:checked + span {
-  background-color:#404040;
-  color: transparent;
-  margin-left : 1.75em;
-}
-
-#bounds label input.off:checked
-{
-  display : none;
-}
-
-#bounds label input.on:checked + span {
-  background: #7FC6A6;
-  color: transparent;
-  border-radius: 1em;
-  float: left;
-  margin-left : 0;
-}
-
-#bounds label input.on:checked
-{
-  display : none;
 }
